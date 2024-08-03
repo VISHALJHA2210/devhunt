@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "~@flaticon/flaticon-uicons/css/all/all";
+
+html{
+    scroll-behavior: smooth;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-10px); }
+    40% { transform: translateX(10px); }
+    60% { transform: translateX(-10px); }
+    80% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+}
+
+.shake-on-reload {
+    animation: shake 0.5s ease-in-out;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px; 
+}
+
+::-webkit-scrollbar-track {
+    background: #0F172A; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1E293B; 
+    border-radius: 6px; 
+}
+
+::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+}
+
+::-webkit-scrollbar-track-piece {
+    background: transparent;
+}
+
+
+@media (max-width: 600px) {
+    ::-webkit-scrollbar {
+        width: 8px; 
+    }
+}
